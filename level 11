@@ -1,0 +1,27 @@
+# Bandit Level 11 → Level 12
+
+## Level Goal
+The password is stored in `data.txt`, encrypted with **ROT13**.
+
+## Given Information
+Username: bandit11  
+Host: bandit.labs.overthewire.org  
+Port: 2220  
+
+## Approach
+Use the `tr` command to decode ROT13 encryption.
+
+## Commands Used
+ssh bandit11@bandit.labs.overthewire.org -p 2220  
+cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
+
+## Explanation
+ROT13 shifts each letter by 13 positions.  
+`tr 'A-Za-z' 'N-ZA-Mn-za-m'` decodes the text to readable password.
+
+## Password for Next Level
+5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
+
+## Key Learning
+- Understand ROT13 cipher  
+- Use `tr` for character translation
