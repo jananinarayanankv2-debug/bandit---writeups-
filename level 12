@@ -1,0 +1,31 @@
+# Bandit Level 12 → Level 13
+
+## Level Goal
+The password is stored in `data.txt` and contains **compressed data** (likely `gzip`).
+
+## Given Information
+Username: bandit12  
+Host: bandit.labs.overthewire.org  
+Port: 2220  
+
+## Approach
+We need to decompress the file to get the password.
+
+## Commands Used
+ssh bandit12@bandit.labs.overthewire.org -p 2220  
+file data.txt  
+mv data.txt data.txt.gz  
+gunzip data.txt.gz  
+cat data.txt
+
+## Explanation
+`file` checks the file type.  
+`gunzip` decompresses gzip files.  
+The resulting file contains the password.
+
+## Password for Next Level
+4wcYUJFw0k0XLShlC8bDb3z7Q7aHDYhR
+
+## Key Learning
+- Identify compressed files using `file`  
+- Decompress files using `gunzip`
