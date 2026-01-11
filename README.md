@@ -9,9 +9,6 @@ Bandit teaches Linux commands and basic cybersecurity concepts.
 - Understand file permissions and encoding
 - Build a strong cybersecurity foundation
 
-## 📌 Progress
+ 📌 Progress
 - Levels completed: 0 – 12
 
-## ⚠️ Disclaimer
-These writeups are for learning only.  
-Try solving the levels yourself before reading the solutions.
