@@ -1,0 +1,26 @@
+# Bandit Level 9 → Level 10
+
+## Level Goal
+The password is stored in the file `data.txt` in **base64 encoded format**.
+
+## Given Information
+Username: bandit9  
+Host: bandit.labs.overthewire.org  
+Port: 2220  
+
+## Approach
+We decode the content of the file using `base64`.
+
+## Commands Used
+ssh bandit9@bandit.labs.overthewire.org -p 2220  
+cat data.txt | base64 --decode
+
+## Explanation
+`base64 --decode` converts the encoded string back to readable text.
+
+## Password for Next Level
+koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+
+## Key Learning
+How to decode base64 encoded data using `base64 --decode`
+	
