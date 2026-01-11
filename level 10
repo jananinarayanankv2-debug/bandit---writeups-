@@ -1,0 +1,25 @@
+# Bandit Level 10 → Level 11
+
+## Level Goal
+The password is stored in the file `data.txt`, which contains base64 encoded data.
+
+## Given Information
+Username: bandit10  
+Host: bandit.labs.overthewire.org  
+Port: 2220  
+
+## Approach
+We decode the base64 content to get the real password.
+
+## Commands Used
+ssh bandit10@bandit.labs.overthewire.org -p 2220  
+base64 -d data.txt
+
+## Explanation
+The `base64 -d` command decodes base64 encoded data into plain text.
+
+## Password for Next Level
+dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
+
+## Key Learning
+How to decode base64 encoded files.
