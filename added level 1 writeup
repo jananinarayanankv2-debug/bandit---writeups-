@@ -1,0 +1,28 @@
+# Bandit Level 1 → Level 2
+
+## Level Goal
+The password for the next level is stored in a file called `-` located in the home directory.
+
+## Given Information
+Username: bandit1  
+Host: bandit.labs.overthewire.org  
+Port: 2220  
+
+## Approach
+The file name begins with a dash, so it cannot be opened normally.
+
+## Commands Used
+ssh bandit1@bandit.labs.overthewire.org -p 2220  
+ls  
+cat ./-
+
+## Explanation
+When a file name starts with `-`, Linux thinks it is an option.  
+Using `./-` tells the system it is a file in the current directory.
+
+## Password for Next Level
+CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+
+## Key Learning
+How to access files with special characters in their names.
+	
